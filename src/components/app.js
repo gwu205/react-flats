@@ -12,7 +12,9 @@ class App extends Component {
 
     render() {
         return (
-            <FlatList />
+            <div className="container">
+                <FlatList />
+            </div>
         )
     }
 }

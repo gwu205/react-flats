@@ -3,8 +3,39 @@ body {
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.flat-list {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.flat {
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5rem;
+  min-height: 200px;
+  padding: 1rem;
+  position: relative;
+  text-shadow: 0 2px 6px rgba(20,20,20,0.7);
+  width: calc(50% - 1rem);
+
+  &--title {
+    font-size: 1.5rem;
+    font-weight: medium;
+  }
 }

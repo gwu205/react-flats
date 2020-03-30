@@ -9,7 +9,7 @@ class FlatList extends Component {
         return (
             <div className="flat-list">
                 { flats.map(flat => {
-                    return <Flat name={flat.name} price={flat.price} imageUrl={flat.imageUrl} />
+                    return <Flat key={flat.lat} name={flat.name} price={flat.price} currency={flat.priceCurrency} imageUrl={flat.imageUrl} />
                 })}
             </div>
         );
