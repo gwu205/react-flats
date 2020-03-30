@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import FlatList from './flatList.js';
+import Map from './map.js';
 
 class App extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class App extends Component {
         return (
             <div className="container">
                 <FlatList />
+                <Map />
             </div>
         )
     }
